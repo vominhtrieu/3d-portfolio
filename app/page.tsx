@@ -1,3 +1,4 @@
+"use client"
 import Laptop from '@/components/Laptop'
 import MainCanvas from '@/components/MainCanvas'
 import MyAvatar from '@/components/MyAvatar'
@@ -6,12 +7,25 @@ import { Box, ChakraProvider } from '@chakra-ui/react'
 
 export default function Home() {
   return (
-    <>
-      <MainCanvas>
-        <MyAvatar />
-        {/* <Laptop /> */}
-      </MainCanvas>
+    <ChakraProvider>
+      <Box
+        width={{
+          base: "100vw",
+          md: "100vh",
+        }}
+        height={{
+          base: "100vw",
+          md: "100vh",
+        }}
+        position='fixed'
+        left={0}
+        bottom={0}>
+        <MainCanvas>
+          <MyAvatar />
+          {/* <Laptop /> */}
+        </MainCanvas>
+      </Box>
       <Main />
-    </>
+    </ChakraProvider >
   )
 }

@@ -1,6 +1,6 @@
 import { Text } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
-const jobTitles = ["SoftwareEngineer", "FrontentEngineer", "BackendEngineer", "GameDeveloper"];
+const jobTitles = ["SoftwareEngineer", "FrontendEngineer", "BackendEngineer", "GameDeveloper"];
 
 export default function JobTitle() {
     const [text, setText] = useState(jobTitles[0]);
@@ -39,6 +39,9 @@ export default function JobTitle() {
     }, [typing, displayedText, text, currentTextIndex]);
 
     return (
-        <Text as="h2" fontSize={42} fontStyle="italic" color="#D2D2D2" fontWeight="thin" textShadow="0px 0px 4px #000000">{`<${displayedText} />`}</Text>
+        <Text as="h2" fontSize={{
+            base:32,
+            md:42
+        }} fontStyle="italic" color="#D2D2D2" fontWeight="thin" textShadow="0px 0px 4px #000000">{`<${displayedText} />`}</Text>
     )
 }

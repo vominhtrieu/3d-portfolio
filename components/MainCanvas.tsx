@@ -3,12 +3,8 @@ import { Canvas } from "@react-three/fiber";
 
 export default function MainCanvas({children}: any) {
     return <Canvas style={{
-        width: "100vh",
-        height: "100vh",
-        position: 'fixed',
-        left: 0,
-        bottom: 0,
-        zIndex: 9999,
+        width: "100%",
+        height: "100%",
     }}
     camera={{
         position: [0, 1.55, 1.0],
