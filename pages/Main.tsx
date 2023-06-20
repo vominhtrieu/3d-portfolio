@@ -33,6 +33,17 @@ export default function Main() {
                         Currently, I have 2 year of experiences and working as Software Engineer at <b>KiteMetric</b>.
                     </Box>
                 </AnimatedPage>
+
+                <AnimatedPage>
+                    <Box as="h2" fontSize={TITLE_FONT_SIZE} style={{  fontWeight: "bold", color: "white" }}>Certifications 🎓</Box>
+                    <Box as="h2" fontSize={CONTENT_FONT_SIZE} style={{ color: "white", textAlign: "left" }}>
+                        <ul>
+                            <li>Good degree in Software Engineering from the Ho Chi Minh University of Science</li>
+                            <li>AWS Certified Solutions Architect - Associate</li>
+                            <li>Upwork Skill Certification - Javascript Back-end Development</li>
+                        </ul>
+                    </Box>
+                </AnimatedPage>
                 <AnimatedPage>
                     <Box as="h2" fontSize={TITLE_FONT_SIZE} style={{ fontWeight: "bold", color: "white" }}>Frontend Skills ✨</Box>
                     <Box as="h2" fontSize={CONTENT_FONT_SIZE} style={{ color: "white", textAlign: "left" }}>
